@@ -1,0 +1,10 @@
+.logo {
+  height: 64px;
+  border-bottom: 1px solid #999;
+}
+.logo img {
+  display: block;
+}
+.acountlogo {
+  float: right;
+}

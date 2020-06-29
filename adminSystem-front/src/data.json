@@ -1,0 +1,22 @@
+{
+  "code": 200,
+  "data": {
+    "bannerimg": [
+      {
+        "imgsrc": "https://img.meituan.net/kylisean/11449127480a6a0eb753fd840329d5db97936.jpg"
+      },
+      {
+        "imgsrc": "https://img.meituan.net/kylisean/542dea35b97e02305e743e0973dd24e547399.jpg"
+      },
+      {
+        "imgsrc": "https://img.meituan.net/kylisean/cf11bbd44b603b0ec5f0af028610f39772661.jpg"
+      },
+      {
+        "imgsrc": "https://img.meituan.net/kylisean/89c17ae261a64560b6f779fb2a1d6f3793283.jpg"
+      },
+      {
+        "imgsrc": "https://img.meituan.net/kylisean/89c17ae261a64560b6f779fb2a1d6f3793283.jpg"
+      }
+    ]
+  }
+}

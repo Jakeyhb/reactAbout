@@ -1,0 +1,25 @@
+.tab-bar{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 49px;
+  display: flex;
+  background: #fafafa;
+}
+.tab-item{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.tab-item img{
+  width: 22px;
+}
+.tab-item span{
+  font-size: 12px;
+}
+.tab-item.active span{
+  color: #f03d37;
+}
