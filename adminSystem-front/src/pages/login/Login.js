@@ -1,9 +1,14 @@
 import React from 'react'
-
+import './login.css'
+import Con from './loginfrom/LoginFrom'
 export default function Login() {
   return (
-    <div className="main-page">
-      <h1>登录页面</h1>
+
+    <div className="login">
+
+      <Con />
+
     </div>
+
   )
 }

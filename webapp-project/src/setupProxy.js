@@ -15,7 +15,16 @@ module.exports = function (app) {
   app.use(
     '/maoyanshlist',
     HttpProxyMiddleware({
-      target: 'https://show.maoyan.com/maoyansh/myshow/ajax/performances/0;st=4;p=1;s=10;tft=0?sellChannel=13&cityId=1&lng=0&lat=0',
+      target: 'https://show.maoyan.com/maoyansh/myshow/ajax/performances/0;st=4;p=1;s=40;tft=0?sellChannel=13&cityId=1&lng=0&lat=0',
+      changeOrigin: true
+    })
+
+  );
+
+  app.use(
+    '/maoyanyclist',
+    HttpProxyMiddleware({
+      target: 'https://show.maoyan.com/maoyansh/myshow/ajax/performances',
       changeOrigin: true
     })
   );
@@ -31,7 +40,7 @@ module.exports = function (app) {
   app.use(
     '/bannerimg',
     HttpProxyMiddleware({
-      target: 'http://116.62.207.144:10000/mock/5dc0e805c9b21d000aa729b0/bannerimgsrc',
+      target: 'http://116.62.207.144:10000/mock/5dc0e805c9b21d000aa729b0',
       changeOrigin: true
     })
   )

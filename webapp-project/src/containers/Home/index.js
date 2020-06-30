@@ -7,6 +7,8 @@ import Dake from './children/Daka'
 import apilist from '../../utils/url'
 import Banner from './children/Banner'
 import requesLD from '../../utils/request'
+import LazyLoad from 'react-lazyload';
+
 
 import 'whatwg-fetch'
 
@@ -24,13 +26,20 @@ export default class Home extends React.Component {
   render() {
     const { showList, dakaList, bannerList } = this.state;
     return (
+
       <div className="page">
-        <One />
-        <Two />
-        <Banner value={bannerList} />
-        <Dake dakadata={dakaList} />
-        <Three showdata={showList} />
+        {/* !!!: 懒加载 */}
+        <LazyLoad scrollContainer='.page' scroll={true} >
+          <One />
+          <Two />
+          <Banner value={bannerList} />
+          <Dake dakadata={dakaList} />
+
+          <Three showdata={showList} />
+        </LazyLoad>
+
       </div>
+
     )
   }
   async componentDidMount() {

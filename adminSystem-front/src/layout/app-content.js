@@ -74,7 +74,8 @@ export default function AppContent() {
       <Route exact path='/manager/list' component={ManageList} />
       <Route exact path='/manager/cate' component={ManageCate} />
 
-      {/* 404 */}
+      {/* 404  */}
+      <Redirect exact to="/" />
       <Route component={NotFind} />
 
     </Switch>

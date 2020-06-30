@@ -53,7 +53,7 @@ export default class Banner extends Component {
             }
 
           </div>
-          <div class="swiper-pagination"></div>
+          <div className="swiper-pagination"></div>
         </div>
       </div>
     )

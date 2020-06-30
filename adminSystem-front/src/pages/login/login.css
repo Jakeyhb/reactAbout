@@ -1,0 +1,44 @@
+.login {
+  width: 100%;
+  height: 858px;
+  background-image: url("../../assets/login_bg01.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.login-tip {
+  font-size: 10px;
+  text-align: center;
+  color: #c3c3c3;
+}
+.login-header {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  padding: 20px;
+}
+
+.login-con {
+  position: absolute;
+  right: 160px;
+  top: 50%;
+  transform: translateY(-60%);
+  width: 350px;
+  background-color: aliceblue;
+  /* background-color: orange; */
+  padding: 5px;
+  border-radius: 10px;
+}
+.login-form-button {
+  width: 100%;
+}
+.card-login {
+  background-color: aliceblue;
+  border-radius: 10px;
+}
+.site-form-item-icon {
+  height: 30px;
+  border-radius: 5px;
+  line-height: 30px;
+}

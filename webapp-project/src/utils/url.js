@@ -1,3 +1,4 @@
+
 export default {
   getYcList: '/maoyanshlist',
   getDkList: '/maoyandklist',
