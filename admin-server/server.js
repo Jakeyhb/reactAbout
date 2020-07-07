@@ -18,14 +18,15 @@ mongoose.connect("mongodb://116.62.207.144:27917/adminDb", {
     //   password: 123456,
     //   role: 'sale'
     // }).save();
+    const app = express()
+    app.use('/user', require('./router/UserRouter'))
+    app.listen(9000, (error) => {
+      if (error) {
+        console.log("服务器启动失败，请检查")
+      } else {
+        console.log("服务器启动成功")
+      }
+    })
   }
 })
 // 启动服务
-const app = express()
-app.listen(9000, (error) => {
-  if (error) {
-    console.log("服务器启动失败，请检查")
-  } else {
-    console.log("服务器启动成功")
-  }
-})
